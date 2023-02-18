@@ -122,6 +122,8 @@ def main():
         for event in pygame.event.get():
             #quit game
             if event.type == pygame.QUIT:
+                BYE.play()
+                pygame.time.delay(1550)
                 run = False  
                 pygame.quit()
 
@@ -135,12 +137,6 @@ def main():
                     bullet = pygame.Rect(blue.x, blue.y + blue.height//2 -2 , 13, 5)
                     sasuke_bullets.append(bullet)
                     GUNSHOT.play()
-
-                if event.key == pygame.K_x:
-                    BYE.play()
-                    pygame.time.delay(1550)
-                    run = False
-                    pygame.quit() 
 
             if event.type == NARUTO_HIT:
                 NARUTO_HEALTH -= 10
