@@ -1,5 +1,4 @@
 # FORTNITE
 its fortnite, Trust me bro
 
-Requirments:
-Pygame - pip install pygame
+Requirments: pip install pygame
